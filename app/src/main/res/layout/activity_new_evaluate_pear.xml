@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/view_finder"
+        android:layout_width="603dp"
+        android:layout_height="802dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/camera_capture_button"
+        android:layout_width="189dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/common_button"
+        android:text="@string/capture_button"
+        android:textColor="@color/common_text"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_finder" />
+
+    <ProgressBar
+        android:id="@+id/new_evaluate_pear_progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="189dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="7.5dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_finder" />
+
+    <TextView
+        android:id="@+id/progress_new_evaluate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/progress_new_evaluate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_evaluate_pear_progress_bar"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/captured_num_text"
+        android:layout_width="70dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/initial_captured_number"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_finder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

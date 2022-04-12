@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_past_pear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewPastPearActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/view_past_pear_progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:id="@+id/progress_evaluate_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/progress_evaluate"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/evaluate_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="100dp"
+            android:text="等級は"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="34sp"
+            android:visibility="gone" />
+
+        <TextView
+                android:id="@+id/evaluate_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="無印"
+                android:textSize="48sp"
+                android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/evaluate_code_end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="400dp"
+            android:visibility="gone"
+            android:text="です" />
+
+        <com.example.pearappearanceevaluatesystemandroid.ui.CustomListView
+            android:id="@+id/pear_image_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableLayout
+            android:id="@+id/pear_deterioration_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/pear_deterioration_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pear_deterioration_name"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/pear_deterioration_ratio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pear_deterioration_ratio"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                tools:context=".ViewPastPearActivity">
+
+                <TableLayout
+                    android:id="@+id/pear_deterioration_table_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </ScrollView>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

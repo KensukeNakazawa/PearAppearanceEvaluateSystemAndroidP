@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PearAppearanceEvaluateSystemAndroid</string>
+    <string name="pear_image_description">洋ナシの画像</string>
+    <string name="new_evaluate">新しく検査する</string>
+    <string name="view_past_evaluate">過去の検査を見る</string>
+    <string name="capture_button">撮影する</string>
+    <string name="initial_captured_number">0/3</string>
+    <string name="pear_deterioration_name">汚損名</string>
+    <string name="pear_deterioration_ratio">汚損割合(%)</string>
+    <string name="pear_images">判定対象の画像</string>
+    <string name="evaluated_pear_images">判定後の画像</string>
+    <string name="progress_evaluate">ただいま検査中です…</string>
+    <string name="progress_new_evaluate">撮影した画像をサーバーに送信しています…</string>
+</resources>
